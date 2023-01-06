@@ -18,7 +18,68 @@ const AudioRecs = () => {
           </p>
         </div>
         <div className="text-[18px]xs, sm:mt-0 bg-black_code h-fit p-5 rounded-md mt-10 xs, sm:overflow-x-auto">
-          <pre></pre>
+          <pre>
+            <span className="text-white">&#60;</span>
+            script src
+            <span className="text-white">=</span>
+            <span className="text-green_code">
+              "https://sdk.scdn.co/spotify-player.js"
+            </span>
+            <span className="text-white">&#62;&#60;/</span>
+            script
+            <span className="text-white">&#62;</span>
+            <br></br>
+            <span className="text-white">&#60;</span>
+            script
+            <span className="text-white">&#62;</span>
+            <br></br>
+            window
+            <span className="text-white">.</span>
+            <span className="text-yellow_code">
+              onSpotifyWebPlaybackSDKReady
+            </span>
+            <span className="text-white">= () =&#62; &#123;</span>
+            <br></br>
+            <span className="pl-5 text-blue_code">const </span>
+            userAccessToken
+            <span className="text-white">=</span>
+            <span className="text-green_code">"[access token]"</span>
+            <span className="text-white">;</span>
+            <br></br>
+            <span className="pl-5 text-blue_code">const </span>
+            webPlayback
+            <span className="text-white">=</span>
+            <span className="text-blue_code">new</span>
+            <span className="text-yellow_code">Spotify.Player</span>
+            <span className="text-white">(&#123;</span>
+            <br></br>
+            <span className="pl-10">name</span>
+            <span className="text-white">: </span>
+            <span className="text-green_code">"Spotify Web Playback SDK"</span>
+            <span className="text-white">,</span>
+            <br></br>
+            <span className="text-yellow_code ml-10">getOAuthToken</span>
+            <span className="text-white">: </span>
+            callback
+            <span className="text-white"> =&#62; &#123; </span>
+            <span className="text-yellow_code">callback</span>
+            <span className="text-white">(</span>
+            userAccessToken
+            <span className="text-white">)&#125;</span>
+            <br></br>
+            <span className="text-white ml-5">&#125;);</span>
+            <br></br>
+            <span className="ml-5">webPlayback</span>
+            <span className="text-white">.</span>
+            <span className="text-yellow_code">connect</span>
+            <span className="text-white">();</span>
+            <br></br>
+            <span className="text-white">&#125;;</span>
+            <br></br>
+            <span className="text-white">&#60;/</span>
+            script
+            <span className="text-white">&#62;</span>
+          </pre>
         </div>
       </div>
     </div>
