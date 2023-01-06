@@ -112,12 +112,12 @@ const Home = () => {
         <div className="w-[70%] sm:w-[95%] xs:w-[100%] m-auto flex xs, sm:flex-col  justify-evenly gap-20 p-5">
           <div className="flex-col w-[50%] xs, sm:w-[100%] font-light">
             <p className="text-[48px] xs:text-[32px] sm:text-[37px] font-extrabold mb-9">
-              We'd love to hear from you.
+              We&apos;d love to hear from you.
             </p>
             <p className="text-[18px]">
-              You're a big part of why Spotify is the best audio platform for
-              developers. So please get in touch with your thoughts about how we
-              can continue to improve our experience for developers.
+              You&apos;re a big part of why Spotify is the best audio platform
+              for developers. So please get in touch with your thoughts about
+              how we can continue to improve our experience for developers.
             </p>
           </div>
           <div className="flex-col w-[45%] xs, sm:w-[100%] font-light">

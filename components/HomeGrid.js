@@ -4,7 +4,7 @@ export const HomeGrid = () => {
   return (
     <div className="w-[80%] xs, sm:w-[90%] m-auto text-center mb-[20rem]">
       <h4 className="text-[32px] font-black mb-[3rem]">
-        What's new in our community?
+        What&apos;s new in our community?
       </h4>
       <div className="flex sm:flex-col gap-[3vw]">
         <div className="flex flex-col justify-between xs, sm:w-full sm:h-auto bg-[url('../public/tile1.jpg')] bg-cover text-blue text-[18px] font-light p-10 bg-center w-[25vw] h-[53vw] ">
@@ -15,7 +15,7 @@ export const HomeGrid = () => {
             </p>
             <p className="xs:text-[16px] text-left">
               Developer Day at Spotify is a three-hour online event for all
-              developers interested in Spotify's open developer platform
+              developers interested in Spotify&apos;s open developer platform
             </p>
           </div>
         </div>

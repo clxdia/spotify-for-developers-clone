@@ -12,9 +12,9 @@ const AudioAnalysis = () => {
         <div className="">
           <p className="font-extralight mt-5 mb-5 text-[16px] xs, sm:text-[15px]">
             Find out the danceability, the instrumentalness, or the valence of
-            your favorite tracks. Get an analysis of a songs segments, bars,
-            pitches, and more. With the Spotify developer platform, you can
-            power up your app with advanced music metadata.
+            your favorite tracks. Get an analysis of a song&apos;s segments,
+            bars, pitches, and more. With the Spotify developer platform, you
+            can power up your app with advanced music metadata.
           </p>
           <Image src={sections}></Image>
         </div>
