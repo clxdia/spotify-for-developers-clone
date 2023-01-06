@@ -23,7 +23,7 @@ const AudioRecs = () => {
             script src
             <span className="text-white">=</span>
             <span className="text-green_code">
-              "https://sdk.scdn.co/spotify-player.js"
+              &#34;https://sdk.scdn.co/spotify-player.js&#34;
             </span>
             <span className="text-white">&#62;&#60;/</span>
             script
@@ -43,7 +43,7 @@ const AudioRecs = () => {
             <span className="pl-5 text-blue_code">const </span>
             userAccessToken
             <span className="text-white">=</span>
-            <span className="text-green_code">"[access token]"</span>
+            <span className="text-green_code">&#34;[access token]&#34;</span>
             <span className="text-white">;</span>
             <br></br>
             <span className="pl-5 text-blue_code">const </span>
@@ -55,7 +55,9 @@ const AudioRecs = () => {
             <br></br>
             <span className="pl-10">name</span>
             <span className="text-white">: </span>
-            <span className="text-green_code">"Spotify Web Playback SDK"</span>
+            <span className="text-green_code">
+              &#34;Spotify Web Playback SDK&#34;
+            </span>
             <span className="text-white">,</span>
             <br></br>
             <span className="text-yellow_code ml-10">getOAuthToken</span>

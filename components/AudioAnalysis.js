@@ -24,7 +24,7 @@ const AudioAnalysis = () => {
               <span className="text-yellow_code">fetch</span>
               <span className="text-white">(</span>
               <span className="text-green_code">
-                "https://api.spotify.com/v1/audio-analysis/6EJiVf7U0p1BBfs0qqeb1f"
+                &#34;https://api.spotify.com/v1/audio-analysis/6EJiVf7U0p1BBfs0qqeb1f&#34;
               </span>
               <span className="text-white">,</span>
               <span> </span>
@@ -32,7 +32,7 @@ const AudioAnalysis = () => {
               <br></br>
               <span className="pl-5">method</span>
               <span className="text-white">: </span>
-              <span className="text-green_code">"GET"</span>
+              <span className="text-green_code">&#34;GET&#34;</span>
               <span className="text-white">,</span>
               <br></br>
               <span className="pl-5">headers</span>
