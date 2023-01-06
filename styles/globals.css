@@ -15,5 +15,5 @@
 }
 
 .bg-home {
-  background-image: url("../public/home.jpg");
+  background-image: url("/home.jpg");
 }
