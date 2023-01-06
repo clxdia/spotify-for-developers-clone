@@ -13,8 +13,8 @@ const AudioRecs = () => {
             With specific controls—such as market, seeds &#40; artists, genres,
             tracks&#41;, ranged audio features &#40;danceability, valence,
             tempo, liveness, etc&#41; and popularity, you can generate music
-            recommendations based on Spotify's powerful and industry-leading
-            algorithms.
+            recommendations based on Spotify&apos;s powerful and
+            industry-leading algorithms.
           </p>
         </div>
         <div className="text-[18px]xs, sm:mt-0 bg-black_code h-fit p-5 rounded-md mt-10 xs, sm:overflow-x-auto">
