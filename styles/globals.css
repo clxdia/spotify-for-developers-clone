@@ -13,3 +13,7 @@
   font-family: "Circular_Light";
   src: url("../public/fonts/AvenirLTStd-Light.otf");
 }
+
+.bg-home {
+  background-image: url("../public/home.jpg");
+}

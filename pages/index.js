@@ -33,7 +33,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="bg-[url('../public/home.jpg')] bg-auto bg-center xs:bg-cover sm:bg-cover h-[84vh] xs:h-auto sm:h-auto ">
+      <div className="bg-home bg-auto bg-center xs:bg-cover sm:bg-cover h-[84vh] xs:h-auto sm:h-auto ">
         <h1 className="xs:text-[1.9rem] sm:text-[38px] xs:p-5 text-[3.7rem] xs, sm:w-[100%] w-[65%] p-10 pt-[7rem] leading-tight font-circular_bold">
           Build experiences for millions of music lovers with
           <span className="text-purple hover:underline hover:underline-offset-2 hover:text-black">
