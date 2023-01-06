@@ -58,7 +58,7 @@ const AudioPlayback = () => {
                 <span className="pl-10">name</span>
                 <span className="text-white">&#58; </span>
                 <span className="text-green_code">
-                  "Spotify Web Playback SDK"
+                  &#34;Spotify Web Playback SDK&#34;
                 </span>
                 <span className="text-white">,</span>
                 <br></br>
