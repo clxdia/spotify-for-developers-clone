@@ -17,7 +17,7 @@ const AudioRecs = () => {
             industry-leading algorithms.
           </p>
         </div>
-        <div className="text-[18px]xs, sm:mt-0 bg-black_code h-fit p-5 rounded-md mt-10 xs, sm:overflow-x-auto">
+        <div className="text-[18px] xs, sm:mt-0 bg-black_code h-fit p-5 rounded-md mt-10 xs, sm:overflow-x-auto">
           <pre>
             <code className=" text-grey font-code_font">
               <span className="text-white">&#60;</span>

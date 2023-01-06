@@ -60,7 +60,7 @@ const Home = () => {
           <a
             className={
               analysis
-                ? "text-purple p-2 pr-10 pl-10 after:bg-purple after:mx-auto xs:w-fit  after:mt-2 after:w-10 after:h-1 flex-col flex text-[14px] "
+                ? "text-purple p-2 pr-10 pl-10 after:bg-purple after:mx-auto xs:w-fit after:mt-2 after:w-10 after:h-1 flex-col flex text-[14px] "
                 : "text-grey p-2 pr-10 pl-10 hover:after:bg-purple after:mx-auto xs:w-fit after:mt-2 after:w-10 after:h-1 flex-col flex text-[14px] "
             }
             onClick={openAnalysis}
@@ -94,19 +94,27 @@ const Home = () => {
         </li>
       </ul>
       <div
-        className={analysis ? "flex-col h-auto w-auto mb-[10rem]" : "hidden"}
+        className={
+          analysis ? "flex-col h-auto w-auto xs:mb-[5rem] mb-[10rem]" : "hidden"
+        }
       >
         <AudioAnalysis />
       </div>
       <div
-        className={playback ? "flex-col h-auto w-auto mb-[10rem]" : "hidden"}
+        className={
+          playback ? "flex-col h-auto w-auto xs:mb-[5rem] mb-[10rem]" : "hidden"
+        }
       >
         <AudioPlayback />
       </div>
-      <div className={recs ? "flex-col h-auto w-auto mb-[10rem]" : "hidden"}>
+      <div
+        className={
+          recs ? "flex-col h-auto w-auto xs:mb-[5rem] mb-[10rem]" : "hidden"
+        }
+      >
         <AudioRecs />
       </div>
-      <div className="bg-light_grey pb-[15rem] pt-[10rem]">
+      <div className="bg-light_grey pb-[15rem] xs:pt-[5rem] pt-[10rem]">
         {" "}
         <HomeGrid />
         <div className="w-[70%] sm:w-[95%] xs:w-[100%] m-auto flex xs, sm:flex-col  justify-evenly gap-20 p-5">

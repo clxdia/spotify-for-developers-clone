@@ -17,3 +17,7 @@
 .bg-home {
   background-image: url("/home.jpg");
 }
+
+.community:hover {
+  content: "";
+}
