@@ -114,10 +114,10 @@ const Home = () => {
       >
         <AudioRecs />
       </div>
-      <div className="bg-light_grey pb-[15rem] xs:pt-[5rem] pt-[10rem]">
+      <div className="bg-light_grey xs:pb-20 pb-[15rem] xs:pt-[5rem] pt-[10rem]">
         {" "}
         <HomeGrid />
-        <div className="w-[70%] sm:w-[95%] xs:w-[100%] m-auto flex xs, sm:flex-col  justify-evenly gap-20 p-5">
+        <div className="w-[70%] sm:w-[95%] xs:w-[100%] m-auto flex xs, sm:flex-col justify-evenly gap-20 p-5">
           <div className="flex-col w-[50%] xs, sm:w-[100%] font-light">
             <p className="text-[48px] xs:text-[32px] sm:text-[37px] font-extrabold mb-9">
               We&apos;d love to hear from you.

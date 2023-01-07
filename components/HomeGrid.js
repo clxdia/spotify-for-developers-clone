@@ -2,7 +2,7 @@ import React from "react";
 
 export const HomeGrid = () => {
   return (
-    <div className="w-[80%] xs, sm:w-[90%] m-auto text-center mb-[20rem]">
+    <div className="w-[80%] xs, sm:w-[90%] m-auto text-center mb-[20rem] xs:mb-[30px]">
       <h4 className="text-[32px] xs:text-[27px] font-black mb-[3rem]">
         What&apos;s new in our community?
       </h4>
