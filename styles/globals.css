@@ -6,12 +6,12 @@
 
 @font-face {
   font-family: "Circular_Bold";
-  src: url("../public/fonts/AvenirLTStd-Black.otf");
+  src: url("/fonts/AvenirLTStd-Black.otf");
 }
 
 @font-face {
   font-family: "Circular_Light";
-  src: url("../public/fonts/AvenirLTStd-Light.otf");
+  src: url("/fonts/AvenirLTStd-Light.otf");
 }
 
 .bg-home {
