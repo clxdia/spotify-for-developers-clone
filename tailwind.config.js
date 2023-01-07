@@ -9,6 +9,7 @@ module.exports = {
     screens: {
       sm: { max: "1225px" },
       xs: { max: "615px" },
+      md: "1226px",
     },
     extend: {
       fontFamily: {
@@ -41,6 +42,8 @@ module.exports = {
       light_green: "#19e68c",
       light_grey: "#efefef",
       light_black: "#222326",
+      dark_grey: "#626467",
+      menu_grey: "#222326",
     },
   },
   plugins: [],
