@@ -26,6 +26,10 @@ html {
   background-image: url("/discover-hero.svg");
 }
 
+.bg-community {
+  background-image: url("/community-hero.jpg");
+}
+
 h1 {
   font-size: 48px;
 }
