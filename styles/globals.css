@@ -14,6 +14,10 @@
   src: url("/fonts/AvenirLTStd-Light.otf");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .bg-home {
   background-image: url("/home.jpg");
 }

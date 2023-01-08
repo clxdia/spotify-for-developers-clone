@@ -102,7 +102,7 @@ list8.push(<li>Save and unsave tracks and albums</li>);
 
 const discover = () => {
   return (
-    <div>
+    <div className="">
       <div className="bg-discover bg-cover w-[100%] bg-center bg-no-repeat h-[80vh] justify-center flex flex-col text-white text-center">
         <h1 className="text-[96px] sm:text-[80px] xs:text-[56px] leading-tight font-circular_bold max-w-[80vw] m-auto mb-0">
           Discover Spotify’s Features
@@ -113,38 +113,38 @@ const discover = () => {
           music fans in as little as a few lines of code.
         </h3>
       </div>
-      <main className="flex">
-        <aside className="bg-aside w-[300px] min-w-[300px] xs, sm2:hidden">
-          <ul className="text-[14px] p-7 pt-10 font-[500] flex flex-col gap-2">
+      <main className="flex relative">
+        <aside className="bg-aside w-[300px] min-w-[300px] h-auto xs, sm2:hidden">
+          <ul className="text-[14px] p-7 pt-10 font-[500] flex flex-col gap-2 sticky top-0">
             <li className="uppercase mb-1 font-[600]">Features</li>
             <li className="hover:text-greenify hover:transition hover:ease-in-out">
-              <Link href={""}>Audio Features & Analysis</Link>
+              <Link href="#audio">Audio Features & Analysis</Link>
             </li>
             <li className="hover:text-greenify hover:transition hover:ease-in-out">
-              <Link href={""}>Playback</Link>
+              <Link href="#playback">Playback</Link>
             </li>
             <li className="hover:text-greenify hover:transition hover:ease-in-out">
-              <Link href={""}>Recommendations</Link>
+              <Link href="#recommendations">Recommendations</Link>
             </li>
             <li className="hover:text-greenify hover:transition hover:ease-in-out">
-              <Link href={""}>Search</Link>
+              <Link href="#search">Search</Link>
             </li>
             <li className="hover:text-greenify hover:transition hover:ease-in-out">
-              <Link href={""}>Playlists</Link>
+              <Link href="#playlists">Playlists</Link>
             </li>
             <li className="hover:text-greenify hover:transition hover:ease-in-out">
-              <Link href={""}>Metadata</Link>
+              <Link href="#metadata">Metadata</Link>
             </li>
             <li className="hover:text-greenify hover:transition hover:ease-in-out">
-              <Link href={""}>Curated Content</Link>
+              <Link href="#curated-content">Curated Content</Link>
             </li>
             <li className="hover:text-greenify hover:transition hover:ease-in-out">
-              <Link href={""}>User Taste</Link>
+              <Link href="#user-taste">User Taste</Link>
             </li>
           </ul>
         </aside>
         <section className="p-[3rem]">
-          <div className="flex sm:flex-col gap-10">
+          <div className="flex sm:flex-col gap-10 pt-5" id="audio">
             <DiscoverCards
               title={"Audio Features & Analysis"}
               subtitle={
@@ -174,7 +174,7 @@ const discover = () => {
               />
             </div>
           </div>
-          <div className="flex sm:flex-col gap-10 mt-[5rem]">
+          <div className="flex sm:flex-col gap-10 mt-[5rem] pt-5" id="playback">
             <DiscoverCards
               title={"Playback"}
               subtitle={"Bring music from Spotify to your application"}
@@ -211,7 +211,10 @@ const discover = () => {
               />
             </div>
           </div>
-          <div className="flex gap-10 sm:flex-col mt-[5rem]">
+          <div
+            className="flex gap-10 sm:flex-col mt-[5rem] pt-5"
+            id="recommendations"
+          >
             <DiscoverCards
               title={"Recommendations"}
               subtitle={
@@ -243,7 +246,7 @@ const discover = () => {
               />
             </div>
           </div>
-          <div className="flex gap-10 sm:flex-col mt-[5rem]">
+          <div className="flex gap-10 sm:flex-col mt-[5rem] pt-5" id="search">
             <DiscoverCards
               title={"Search"}
               subtitle={"Find any track, artist, album or playlist on Spotify"}
@@ -271,7 +274,10 @@ const discover = () => {
               />
             </div>
           </div>
-          <div className="flex gap-10 sm:flex-col mt-[5rem]">
+          <div
+            className="flex gap-10 sm:flex-col mt-[5rem] pt-5"
+            id="playlists"
+          >
             <DiscoverCards
               title={"Playlists"}
               subtitle={
@@ -310,7 +316,7 @@ const discover = () => {
               />
             </div>
           </div>
-          <div className="flex gap-10 sm:flex-col mt-[5rem]">
+          <div className="flex gap-10 sm:flex-col mt-[5rem] pt-5" id="metadata">
             <DiscoverCards
               title={"Metadata"}
               subtitle={"Access information about any track, artist or album"}
@@ -340,143 +346,11 @@ const discover = () => {
               />
             </div>
           </div>
-          <div className="flex gap-10 sm:flex-col mt-[5rem]">
-            <DiscoverCards
-              title={"Playback"}
-              subtitle={"Bring music from Spotify to your application"}
-              bio={
-                "We offer multiple, fully featured playback solutions depending on your needs"
-              }
-              list={list2}
-              button={"get started on web"}
-            />
-            <div className="w-[50%] sm:w-[100%]">
-              <h4 className="font-semibold">
-                Real apps that integrate playback
-              </h4>
-              <AppsCards
-                apptitle={"Noon Pacific"}
-                appicon={playback1}
-                appbio={
-                  "This iPhone app provides curated mixtapes with a sleek UI and playback powered by Spotify."
-                }
-              />
-              <AppsCards
-                apptitle={"C - Listening Room"}
-                appicon={playback2}
-                appbio={
-                  "Multiple users can propose and vote for songs, and then play them in a synchronised way through Spotify."
-                }
-              />
-              <AppsCards
-                apptitle={"Runkeeper"}
-                appicon={playback3}
-                appbio={
-                  "With this app, you can listen to all your Spotify music on the run, while keeping track of your workout."
-                }
-              />
-            </div>
-          </div>
-          <div className="flex gap-10 sm:flex-col mt-[5rem]">
-            <DiscoverCards
-              title={"Recommendations"}
-              subtitle={
-                "Customize and serve Spotify’s powerful recommendations to your users"
-              }
-              bio={
-                "With specific controls - such as market, seeds (artists, genres, tracks), ranged audio features (danceability, valence, tempo, liveness, etc) and popularity, you can generate very specific recommendations based on Spotify’s powerful and industry-leading algorithms."
-              }
-              list={list3}
-              button={"read the docs"}
-            />
-            <div className="w-[50%] sm:w-[100%]">
-              <h4 className="font-semibold">
-                Real apps that integrate recommendations
-              </h4>
-              <AppsCards
-                apptitle={"Magic Playlist"}
-                appicon={recs1}
-                appbio={
-                  "Helps users make playlsits based on songs. The app surfaces users' top tracks on its home page."
-                }
-              />
-              <AppsCards
-                apptitle={"Klarafy"}
-                appicon={recs2}
-                appbio={
-                  "This app uses track metadata on playlists to recommend classical musical that you might like."
-                }
-              />
-            </div>
-          </div>
-          <div className="flex gap-10 sm:flex-col mt-[5rem]">
-            <DiscoverCards
-              title={"Search"}
-              subtitle={"Find any track, artist, album or playlist on Spotify"}
-              bio={
-                "Search and get information about any artist, album, track, or playlist on Spotify based on a search query."
-              }
-              list={list4}
-              button={"read the docs"}
-            />
-            <div className="w-[50%] sm:w-[100%]">
-              <h4 className="font-semibold">Real apps that integrate search</h4>
-              <AppsCards
-                apptitle={"Record Player"}
-                appicon={search1}
-                appbio={
-                  "Record Player is an internet Rube Goldberg Machine that combines the Google Cloud Vision API and the Spotify API to play albums based on a picture of the album cover."
-                }
-              />
-              <AppsCards
-                apptitle={"Six Degrees of Kanye West"}
-                appicon={search2}
-                appbio={
-                  "Similar to Artist Explorer, but with a Kanye laser focus. This app will tell you how closely connected your artist is to Kanye West, based on artist collaboration."
-                }
-              />
-            </div>
-          </div>
-          <div className="flex gap-10 sm:flex-col mt-[5rem]">
-            <DiscoverCards
-              title={"Playlists"}
-              subtitle={
-                "Manage Spotify users’ playlists directly from your application"
-              }
-              bio={
-                "Create, modify, view, delete, and set custom covers for your user’s playlists."
-              }
-              list={list5}
-              button={"read the docs"}
-            />
-            <div className="w-[50%] sm:w-[100%]">
-              <h4 className="font-semibold">
-                Real apps that integrate playlists
-              </h4>
-              <AppsCards
-                apptitle={"Discover Quickly"}
-                appicon={playlist1}
-                appbio={
-                  "An interface for music discovery. Quickly scan through songs and save them for later listening."
-                }
-              />
-              <AppsCards
-                apptitle={"Setify"}
-                appicon={playlist2}
-                appbio={
-                  "Relive a concert--or prepare for an upcoming one--by creating a playlist of a specific concert's setlist."
-                }
-              />
-              <AppsCards
-                apptitle={"Playlist Souffle"}
-                appicon={playlist3}
-                appbio={
-                  "Get deeper in an artist's catalog: this app takes a playlist and replaces each song by another one by that artist."
-                }
-              />
-            </div>
-          </div>
-          <div className="flex gap-10 sm:flex-col mt-[5rem]">
+
+          <div
+            className="flex gap-10 sm:flex-col mt-[5rem] pt-5"
+            id="curated-content"
+          >
             <DiscoverCards
               title={"Curated Content"}
               subtitle={
@@ -508,7 +382,10 @@ const discover = () => {
               />
             </div>
           </div>
-          <div className="flex gap-10 sm:flex-col mt-[5rem]">
+          <div
+            className="flex gap-10 sm:flex-col mt-[5rem] pt-5"
+            id="user-taste"
+          >
             <DiscoverCards
               title={"User Taste"}
               subtitle={
