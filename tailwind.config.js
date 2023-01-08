@@ -44,6 +44,8 @@ module.exports = {
       light_black: "#222326",
       dark_grey: "#626467",
       menu_grey: "#222326",
+      aside: "#efefef",
+      link: "#1ed760",
     },
   },
   plugins: [],

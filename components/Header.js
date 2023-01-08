@@ -7,8 +7,6 @@ import forum from "../public/forum.svg";
 import showcase from "../public/showcase.svg";
 import mobile from "../public/mobile.svg";
 import hardware from "../public/hardware.svg";
-import { HiMenu } from "react-icons/hi";
-import { IoCloseSharp } from "react-icons/io5";
 import { Turn as Hamburger } from "hamburger-react";
 
 const Header = () => {
@@ -21,10 +19,13 @@ const Header = () => {
       <header className="bg-black p-[0.9rem] text-white w-[100%] relative">
         <div className="flex items-center sm:justify-between">
           <div className="flex items-center">
-            <Image
-              src={logo}
-              className="w-[250px] ml-[4px] pb-[5px] min-w-[250px]"
-            />
+            <Link href="/">
+              <Image
+                src={logo}
+                alt="spotify for developers logo"
+                className="w-[250px] ml-[4px] pb-[5px] min-w-[250px]"
+              />
+            </Link>
           </div>
           <div className="pl-10 font-[200] w-[100%] ml-10 text-[14px] sm:hidden">
             <ul className="uppercase flex justify-start gap-[4rem] font-circular_light">
