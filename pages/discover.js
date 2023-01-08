@@ -4,7 +4,6 @@ import React from "react";
 import AppsCards from "../components/AppsCards";
 import DiscoverCards from "../components/DiscoverCards";
 
-import icon4 from "/public/discover/icon-4.svg";
 import audio1 from "/public/discover/audio-4.png";
 import audio2 from "/public/discover/audio-2.png";
 
@@ -178,7 +177,6 @@ const discover = () => {
           <div className="flex sm:flex-col gap-10 mt-[5rem]">
             <DiscoverCards
               title={"Playback"}
-              audio4={icon4}
               subtitle={"Bring music from Spotify to your application"}
               bio={
                 "We offer multiple, fully featured playback solutions depending on your needs"
@@ -345,7 +343,6 @@ const discover = () => {
           <div className="flex gap-10 sm:flex-col mt-[5rem]">
             <DiscoverCards
               title={"Playback"}
-              audio4={icon4}
               subtitle={"Bring music from Spotify to your application"}
               bio={
                 "We offer multiple, fully featured playback solutions depending on your needs"
