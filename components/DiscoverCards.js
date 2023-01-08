@@ -6,7 +6,7 @@ import audio3 from "/public/audio-3.svg";
 
 const DiscoverCards = ({ title, subtitle, bio, list, audio4, button }) => {
   return (
-    <div className="flex flex-col gap-5 w-[50%]">
+    <div className="flex flex-col gap-5 w-[50%] sm:w-[100%]">
       <h1 className="font-circular_bold">
         {title}
         <div className="w-fit inline-block">
@@ -24,7 +24,7 @@ const DiscoverCards = ({ title, subtitle, bio, list, audio4, button }) => {
       <ul className="text-[15px] list-disc list-inside font-[200] ml-6 flex flex-col gap-1">
         {list}
       </ul>
-      <button className="bg-greenify w-[40%] text-[14px] xs, sm:mb-20 text-white p-4 pl-10 pr-10 rounded-[50px] uppercase font-bold tracking-widest mt-3 hover:bg-link hover:ease-in-out">
+      <button className="bg-greenify w-fit text-[14px] xs, sm:mb-3 text-white p-4 pl-10 pr-10 rounded-[50px] uppercase font-bold tracking-widest mt-3 hover:bg-link hover:ease-in-out">
         {button}
       </button>
     </div>
