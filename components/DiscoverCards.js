@@ -4,7 +4,7 @@ import audio1 from "/public/audio-1.svg";
 import audio2 from "/public/audio-2.svg";
 import audio3 from "/public/audio-3.svg";
 
-const DiscoverCards = ({ title, subtitle, bio, list, audio4, button }) => {
+const DiscoverCards = ({ title, subtitle, bio, list, button }) => {
   return (
     <div className="flex flex-col gap-5 w-[50%] sm:w-[100%]">
       <h1 className="font-circular_bold">
@@ -14,7 +14,6 @@ const DiscoverCards = ({ title, subtitle, bio, list, audio4, button }) => {
             <Image src={audio1}></Image>
             <Image src={audio2}></Image>
             <Image src={audio3}></Image>
-            <Image src={audio4}></Image>
           </div>
         </div>
       </h1>
