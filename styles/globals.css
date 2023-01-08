@@ -34,8 +34,13 @@ h3 {
   font-size: 24px;
 }
 
+h4 {
+  font-size: 18px;
+}
+
 p {
   font-size: 16px;
+  font-weight: 200;
 }
 
 @media only screen and (max-width: 1225px) {
