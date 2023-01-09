@@ -30,6 +30,10 @@ html {
   background-image: url("/community-hero.jpg");
 }
 
+.bg-dashboard {
+  background-image: url("/dashboard-hero.jpg");
+}
+
 h1 {
   font-size: 48px;
 }
