@@ -23,7 +23,7 @@ const dashboard = () => {
             log in
           </button>
           <p>
-            Don't have an account?{" "}
+            Don’t have an account?{" "}
             <Link className="text-greenify hover:text-light_green" href="/">
               Sign up for a free Spotify account here.
             </Link>
