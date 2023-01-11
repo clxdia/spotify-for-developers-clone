@@ -1,6 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import NewsUI from "../components/NewsUI";
 
 const community = () => {
+  const [articles, setArticles] = useState([]);
+
+  useEffect(() => {
+    const fetchNews = async () => {
+      const res = await fetch(
+        "https://newsapi.org/v2/top-headlines?category=technology&country=us&apiKey=2fb94c97708f4ad4842b9a15cc4cf770"
+      );
+      const data = await res.json();
+      setArticles(data.articles);
+    };
+    fetchNews();
+  }, []);
+
   return (
     <div>
       <div className="flex xs, sm:hidden">
@@ -12,6 +26,13 @@ const community = () => {
           Developer News
         </h1>
       </div>
+      <main>
+        {articles.lenght === 0 ? (
+          <div>Loading....</div>
+        ) : (
+          articles.map((article) => <NewsUI article={article} />)
+        )}
+      </main>
     </div>
   );
 };
