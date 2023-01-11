@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import NewsUI from "../components/NewsUI";
 
-const community = () => {
+const Community = () => {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
@@ -37,4 +37,4 @@ const community = () => {
   );
 };
 
-export default community;
+export default Community;
