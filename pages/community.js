@@ -30,7 +30,9 @@ const Community = () => {
         {articles.length === 0 ? (
           <div>Loading....</div>
         ) : (
-          articles.map((article) => <NewsUI article={article} />)
+          articles.map((article) => (
+            <NewsUI article={article} key={article.pubDate} />
+          ))
         )}
       </main>
     </div>
