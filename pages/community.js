@@ -7,10 +7,10 @@ const Community = () => {
   useEffect(() => {
     const fetchNews = async () => {
       const res = await fetch(
-        "https://newsapi.org/v2/top-headlines?category=technology&country=us&apiKey=2fb94c97708f4ad4842b9a15cc4cf770"
+        `http://api.mediastack.com/v1/news?access_key=${process.env.NEXT_PUBLIC_API_KEY}&categories=technology&countries=us,gb&limit=5`
       );
       const data = await res.json();
-      setArticles(data.articles);
+      setArticles(data.data);
     };
     fetchNews();
   }, []);
@@ -27,11 +27,11 @@ const Community = () => {
         </h1>
       </div>
       <main>
-        {articles.lenght === 0 ? (
+        {articles.lenght < 0 ? (
           <div>Loading....</div>
         ) : (
           articles.map((article) => (
-            <NewsUI article={article} key={article.source.id} />
+            <NewsUI article={article} key={article.author} />
           ))
         )}
       </main>

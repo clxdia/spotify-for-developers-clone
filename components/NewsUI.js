@@ -9,7 +9,7 @@ const NewsUI = ({ article }) => {
         <h1 className="font-circular_bold leading-tight hover:text-light_green">
           <Link href={article.url}>{article.title}</Link>
         </h1>
-        <p className="text-grey text-[13px]">{article.publishedAt}</p>
+        <p className="text-grey text-[13px]">{article.published_at}</p>
         <p className="font-circular_bold">by {article.author}</p>
         <p>{article.description}</p>
         <Link
