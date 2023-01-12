@@ -68,13 +68,13 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href="/forum">
+              <Link href="https://community.spotify.com/t5/Spotify-for-Developers/bd-p/Spotify_Developer">
                 <Image src={forum} className="mb-3"></Image>
                 FORUM
               </Link>
             </li>
             <li>
-              <Link href="/showcase">
+              <Link href="/community/showcase">
                 <Image src={showcase} className="mb-3"></Image>
                 SHOWCASE
               </Link>

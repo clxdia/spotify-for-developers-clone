@@ -7,7 +7,7 @@ const Community = () => {
   useEffect(() => {
     const fetchNews = async () => {
       const res = await fetch(
-        `https://newsdata.io/api/1/news?apikey=${process.env.NEXT_PUBLIC_API_KEY}&language=en,it&from_date=2023-01-12&to_date=2023-01-12&category=technology`
+        `https://newsdata.io/api/1/news?apikey=${process.env.NEXT_PUBLIC_API_KEY}&language=it&from_date=2023-01-12&to_date=2023-01-12&category=technology`
       );
       const data = await res.json();
       setArticles(data.results);
