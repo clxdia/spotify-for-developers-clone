@@ -7,7 +7,7 @@ const Community = () => {
   useEffect(() => {
     const fetchNews = async () => {
       const res = await fetch(
-        `http://api.mediastack.com/v1/news?access_key=${process.env.NEXT_PUBLIC_API_KEY}&categories=technology&countries=us,gb&limit=5`
+        `//api.mediastack.com/v1/news?access_key=${process.env.NEXT_PUBLIC_API_KEY}&categories=technology&countries=us,gb&limit=5`
       );
       const data = await res.json();
       setArticles(data.data);
