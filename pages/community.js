@@ -7,8 +7,7 @@ const Community = () => {
   useEffect(() => {
     const fetchNews = async () => {
       const res = await fetch(
-        // `http://api.mediastack.com/v1/news?access_key=${process.env.NEXT_PUBLIC_API_KEY}&categories=technology&countries=us,gb&limit=5`
-        `https://newsdata.io/api/1/news?apikey=pub_155834ba165cf1779362906eb93c17ba38fa8&&language=en,it&from_date=2023-01-12&to_date=2023-01-12&category=technology`
+        `https://newsdata.io/api/1/news?apikey=${process.env.NEXT_PUBLIC_API_KEY}&language=en,it&from_date=2023-01-12&to_date=2023-01-12&category=technology`
       );
       const data = await res.json();
       setArticles(data.results);
@@ -28,7 +27,7 @@ const Community = () => {
         </h1>
       </div>
       <main>
-        {articles.length < 0 ? (
+        {articles.length === 0 ? (
           <div>Loading....</div>
         ) : (
           articles.map((article) => <NewsUI article={article} />)
