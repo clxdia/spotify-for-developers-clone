@@ -12,7 +12,7 @@ const News = () => {
   useEffect(() => {
     setTimeout(() => {
       fetch(
-        `https://newsdata.io/api/1/news?apike9y=${process.env.NEXT_PUBLIC_API_KEY}&language=it&from_date=2023-01-12&to_date=2023-01-12&category=technology`
+        `https://newsdata.io/api/1/news?apikey=${process.env.NEXT_PUBLIC_API_KEY}&language=it&from_date=2023-01-12&to_date=2023-01-12&category=technology`
       )
         .then((res) => {
           if (!res.ok) {
