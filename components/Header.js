@@ -34,7 +34,7 @@ const Header = () => {
               </li>
               <li className=" hover:transition hover:ease-in-out hover:text-greenify ">
                 <Link
-                  href="/community"
+                  href="/community/news"
                   onMouseEnter={() => setCommunityOpen(true)}
                 >
                   community
@@ -57,7 +57,7 @@ const Header = () => {
       </header>
       {isCommunityOpen && (
         <div
-          className="bg-black_code block absolute p-10 w-[100%] font-bold"
+          className="bg-black_code block absolute p-10 w-[100%] font-bold z-50"
           onMouseLeave={() => setCommunityOpen(false)}
         >
           <ul className="flex gap-20 text-white">
@@ -85,7 +85,7 @@ const Header = () => {
 
       {isCasesOpen && (
         <div
-          className="bg-black_code block absolute p-10 w-[100%] font-bold"
+          className="bg-black_code block absolute p-10 w-[100%] font-bold z-50"
           onMouseLeave={() => setCasesOpen(false)}
         >
           <ul className="flex gap-20 text-[14px] text-white">

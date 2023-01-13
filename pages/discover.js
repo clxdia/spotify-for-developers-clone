@@ -4,31 +4,31 @@ import React from "react";
 import AppsCards from "../components/AppsCards";
 import DiscoverCards from "../components/DiscoverCards";
 
-import audio1 from "/public/discover/audio-4.png";
-import audio2 from "/public/discover/audio-2.png";
+import audio1 from "/public/showcase/showcase6.png";
+import audio2 from "/public/showcase/showcase3.png";
 
-import playback1 from "/public/discover/playback-1.png";
-import playback2 from "/public/discover/playback-2.png";
-import playback3 from "/public/discover/playback-3.png";
+import playback1 from "/public/showcase/showcase8.png";
+import playback2 from "/public/showcase/showcase10.png";
+import playback3 from "/public/showcase/showcase22.png";
 
-import recs1 from "/public/discover/recs-1.png";
-import recs2 from "/public/discover/recs-2.png";
+import recs1 from "/public/showcase/showcase17.png";
+import recs2 from "/public/showcase/showcase14.png";
 
-import search1 from "/public/discover/search-1.png";
-import search2 from "/public/discover/search-2.png";
+import search1 from "/public/showcase/showcase2.png";
+import search2 from "/public/showcase/showcase13.png";
 
-import playlist1 from "/public/discover/playlist-1.png";
-import playlist2 from "/public/discover/playlist-2.jpg";
-import playlist3 from "/public/discover/playlist-3.png";
+import playlist1 from "/public/showcase/showcase1.png";
+import playlist2 from "/public/showcase/showcase15.jpg";
+import playlist3 from "/public/showcase/showcase5.png";
 
-import metadata1 from "/public/discover/metadata-1.jpg";
-import metadata2 from "/public/discover/metadata-2.png";
+import metadata1 from "/public/showcase/showcase31.jpg";
+import metadata2 from "/public/showcase/showcase9.png";
 
-import curated1 from "/public/discover/curated-1.png";
-import curated2 from "/public/discover/curated-2.png";
+import curated1 from "/public/showcase/showcase32.png";
+import curated2 from "/public/showcase/showcase20.png";
 
-import user1 from "/public/discover/user-1.png";
-import user2 from "/public/discover/user-2.png";
+import user1 from "/public/showcase/showcase7.png";
+import user2 from "/public/showcase/showcase4.png";
 
 const list1 = [];
 list1.push(<li>Mood: Danceability, Valence, Energy, Tempo</li>);
