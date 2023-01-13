@@ -34,12 +34,29 @@ html {
   background-image: url("/dashboard-hero.jpg");
 }
 
+.showcase-container {
+  padding: 3em 0 0 0;
+  width: calc(25vw * 3 + 4vw * 3);
+}
+
 .showcase {
-  background: cover;
-  width: 25vw;
-  height: 25vw;
-  max-width: 450px;
-  max-height: 450px;
+  background-size: cover;
+  width: 26.3vw;
+  height: 26.3vw;
+  max-width: 460px;
+  max-height: 460px;
+  margin-bottom: 3vw;
+  padding: 0;
+  overflow: hidden;
+}
+
+.showcase-long {
+  background-size: cover;
+  background-position: center;
+  width: 55.5vw;
+  max-width: (910px + 3vw);
+  height: 26.3vw;
+  margin-bottom: 3vw;
 }
 
 h1 {
@@ -96,5 +113,26 @@ p {
 
   p {
     font-size: 16px;
+  }
+
+  .showcase,
+  .showcase-long {
+    height: 40vw;
+    width: 100%;
+    max-width: none;
+    background-position: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .showcase-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .showcase-container {
+    max-width: calc(450px * 3 + 3vw * 2);
   }
 }
