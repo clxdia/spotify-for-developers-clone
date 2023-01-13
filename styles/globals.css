@@ -34,6 +34,14 @@ html {
   background-image: url("/dashboard-hero.jpg");
 }
 
+.showcase {
+  background: cover;
+  width: 25vw;
+  height: 25vw;
+  max-width: 450px;
+  max-height: 450px;
+}
+
 h1 {
   font-size: 48px;
 }

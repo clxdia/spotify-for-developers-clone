@@ -1,6 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+import img1 from "/public/showcase2.png";
 const showcase = () => {
   return (
     <div>
@@ -27,7 +29,11 @@ const showcase = () => {
           built using our APIs, SDKs and other developer tools.{" "}
         </p>
         <section className="flex flex-col">
-          <div className="flex"></div>
+          <div className="flex justify-between">
+            <div className="bg-[url('/showcase1.png')] showcase bg-cover"></div>
+            <div className="bg-[url('/showcase1.png')] showcase bg-cover"></div>
+            <div className="bg-[url('/showcase1.png')] showcase bg-cover"></div>
+          </div>
         </section>
       </main>
     </div>
