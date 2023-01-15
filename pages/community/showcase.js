@@ -32,39 +32,204 @@ const showcase = () => {
           built using our APIs, SDKs and other developer tools.{" "}
         </p>
         <section className="showcase-container">
-          <div className="bg-[url('/showcase/showcase1.png')] showcase mr-[3vw]"></div>
-          <div className="bg-[url('/showcase/showcase2.png')] showcase mr-[3vw]"></div>
-          <div className="bg-[url('/showcase/showcase3.png')] showcase "></div>
-          <div className="bg-[url('/showcase/showcase4.png')] showcase mr-[3vw]"></div>
-          <div className="bg-[url('/showcase/showcase5.png')] showcase-long"></div>
-          <div className="bg-[url('/showcase/showcase6.png')] showcase mr-[3vw]"></div>
-          <div className="bg-[url('/showcase/showcase7.png')] showcase mr-[3vw]"></div>
-          <div className="bg-[url('/showcase/showcase8.png')] showcase"></div>
-          <div className="bg-[url('/showcase/showcase9.png')] showcase-long mr-[3vw]"></div>
-          <div className="bg-[url('/showcase/showcase10.png')] showcase"></div>
-          <div className="bg-[url('/showcase/showcase11.jpg')] showcase mr-[3vw]"></div>
-          <div className="bg-[url('/showcase/showcase12.png')] showcase mr-[3vw]"></div>
-          <div className="bg-[url('/showcase/showcase13.png')] showcase "></div>
-          <div className="bg-[url('/showcase/showcase14.png')] showcase mr-[3vw]"></div>
-          <div className="bg-[url('/showcase/showcase15.jpg')] showcase-long"></div>
-          <div className="bg-[url('/showcase/showcase16.jpg')] showcase mr-[3vw]"></div>
-          <div className="bg-[url('/showcase/showcase17.png')] showcase mr-[3vw]"></div>
-          <div className="bg-[url('/showcase/showcase18.png')] showcase "></div>
-          <div className="bg-grey showcase-long mr-[3vw] "></div>
-          <div className="bg-[url('/showcase/showcase20.png')] showcase"></div>
-          <div className="bg-[url('/showcase/showcase21.png')] showcase mr-[3vw]"></div>
-          <div className="bg-[url('/showcase/showcase22.png')] showcase mr-[3vw]"></div>
-          <div className="bg-[url('/showcase/showcase23.jpg')] showcase "></div>
-          <div className="bg-[url('/showcase/showcase24.jpg')] showcase mr-[3vw]"></div>
-          <div className="bg-[url('/showcase/showcase25.jpg')] showcase-long"></div>
-          <div className="bg-[url('/showcase/showcase26.jpg')] showcase mr-[3vw]"></div>
-          <div className="bg-[url('/showcase/showcase27.png')] showcase mr-[3vw]"></div>
-          <div className="bg-[url('/showcase/showcase33.svg')] showcase "></div>
-          <div className="bg-[url('/showcase/showcase28.jpg')] showcase-long mr-[3vw]"></div>
-          <div className="bg-[url('/showcase/showcase34.svg')] showcase"></div>
-          <div className="bg-[url('/showcase/showcase31.jpg')] showcase mr-[3vw]"></div>
-          <div className="bg-[url('/showcase/showcase33.svg')] showcase mr-[3vw]"></div>
-          <div className="bg-[url('/showcase/showcase32.png')] showcase "></div>
+          <div className="bg-[url('/showcase/showcase1.png')] showcase mr-[3vw]">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Discover Quickly</h2>
+              <p>An interface for music discovery.</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase2.png')] showcase mr-[3vw]">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase3.png')] showcase">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase4.png')] showcase mr-[3vw]">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase5.png')] showcase-long">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase6.png')] showcase mr-[3vw]">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase7.png')] showcase mr-[3vw]">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase8.png')] showcase">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase9.png')] showcase-long mr-[3vw]">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase10.png')] showcase">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase11.jpg')] showcase mr-[3vw]">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase12.png')] showcase mr-[3vw]">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase13.png')] showcase">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase14.png')] showcase mr-[3vw]">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase15.jpg')] showcase-long">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase16.jpg')] showcase mr-[3vw]">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase17.png')] showcase mr-[3vw]">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase18.png')] showcase ">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-grey showcase-long mr-[3vw] ">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase20.png')] showcase">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase21.png')] showcase mr-[3vw]">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase22.png')] showcase mr-[3vw]">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase23.jpg')] showcase ">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase24.jpg')] showcase mr-[3vw]">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase25.jpg')] showcase-long">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase26.jpg')] showcase mr-[3vw]">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase27.png')] showcase mr-[3vw]">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase33.svg')] showcase ">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase28.jpg')] showcase-long mr-[3vw]">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase34.svg')] showcase">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase31.jpg')] showcase mr-[3vw]">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase33.svg')] showcase mr-[3vw]">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
+          <div className="bg-[url('/showcase/showcase32.png')] showcase">
+            <Link href="/" className="showcase-hover">
+              <h2 className="font-circular_bold ">Record Player</h2>
+              <p>Search Spotify using an image of an album cover</p>
+            </Link>
+          </div>
         </section>
       </main>
     </div>
