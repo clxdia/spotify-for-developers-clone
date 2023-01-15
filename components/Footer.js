@@ -37,7 +37,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="text-[14px] font-semibold">
-            <p className="">SUPPORT</p>
+            <p className="font-semibold">SUPPORT</p>
             <ul className="">
               <li className="mt-4">DISCOVER</li>
               <li className="mt-4">CONSOLE</li>
@@ -45,7 +45,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="text-[14px] font-semibold">
-            <p className="">USE CASES</p>
+            <p className="font-semibold">USE CASES</p>
             <ul className="font-light">
               <li className="mt-4 font-semibold">LEGAL</li>
               <li className="mt-6 font-normal hover:text-greenify">
