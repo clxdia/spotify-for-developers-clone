@@ -8,8 +8,8 @@ const AudioAnalysis = () => {
       <h1 className="font-extrabold sm, text-[24px] xs:text-[18px]">
         Explore audio features and in-depth audio analysis of tracks
       </h1>
-      <div className="flex xs, sm:flex-col gap-10 xs, sm:gap-2">
-        <div className="">
+      <div className="flex xs, sm:flex-col gap-10 xs, sm:gap-2 w-[100%]">
+        <div className="w-[50%] xs, sm:w-[100%]">
           <p className="font-extralight mt-5 mb-5 text-[16px] xs, sm:text-[15px]">
             Find out the danceability, the instrumentalness, or the valence of
             your favorite tracks. Get an analysis of a song&apos;s segments,
@@ -18,7 +18,7 @@ const AudioAnalysis = () => {
           </p>
           <Image src={sections}></Image>
         </div>
-        <div className="text-[18px] mt-10  xs, sm:mt-0 bg-black_code h-fit p-5 rounded-md sm, xs, sm:overflow-x-auto">
+        <div className="text-[16px] overflow-hidden xs, sm:w-[100%] mt-10 w-[50%] xs, sm:mt-0 bg-black_code h-fit p-3 rounded-md overflow-x-auto leading-tight">
           <pre className="">
             <code className=" text-grey font-code_font">
               <span className="text-yellow_code">fetch</span>

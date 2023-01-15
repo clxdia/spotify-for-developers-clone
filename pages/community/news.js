@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import NewsUI from "../../components/NewsUI";
 
@@ -34,9 +35,24 @@ const News = () => {
 
   return (
     <div>
-      <div className="flex xs, sm:hidden">
-        <div className="h-[0.9rem] w-[300px] min-w-[300px] bg-greenify"></div>
-        <div className="h-[0.9rem] bg-black_code w-[100%]"></div>
+      <div className="flex xs, sm:hidden text-white tracking-wide">
+        <div className="h-[2rem] w-[300px] min-w-[300px] bg-greenify flex pl-5 items-center">
+          <p className="text-[15px] font-normal">NEWS</p>
+        </div>
+        <div className="h-[2rem] bg-black_code w-[100%] flex gap-10 pl-5 items-center">
+          <Link href="/community/news" className="text-[14px]">
+            NEWS
+          </Link>
+          <Link
+            href="https://community.spotify.com/t5/Spotify-for-Developers/bd-p/Spotify_Developer"
+            className="text-[14px]"
+          >
+            FORUM
+          </Link>
+          <Link href="/community/showcase" className="text-[14px]">
+            SHOWCASE
+          </Link>
+        </div>
       </div>
       <div className="bg-community bg-cover h-[400px] w-[100%] m-auto flex items-center">
         <h1 className="xs:p-5 xs:w-[100%] text-[80px] w-[750px] m-auto text-white xs:text-[56px] leading-tight font-circular_bold xs:ml-0 ml-[16vw] sm:ml-[4vw] xs:max-w-[90%] xs:m-auto ">

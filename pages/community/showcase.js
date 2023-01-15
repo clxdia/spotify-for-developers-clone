@@ -1,8 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-import img1 from "/public/showcase2.png";
 const showcase = () => {
   return (
     <div className="w-[100%]">
@@ -14,7 +12,10 @@ const showcase = () => {
           <Link href="/community/news" className="text-[14px]">
             NEWS
           </Link>
-          <Link href="/community/forum" className="text-[14px]">
+          <Link
+            href="https://community.spotify.com/t5/Spotify-for-Developers/bd-p/Spotify_Developer"
+            className="text-[14px]"
+          >
             FORUM
           </Link>
           <Link href="/community/showcase" className="text-[14px]">

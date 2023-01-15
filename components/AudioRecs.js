@@ -8,7 +8,7 @@ const AudioRecs = () => {
         users
       </h1>
       <div className="flex xs, sm:flex-col gap-10 xs, sm:gap-2">
-        <div className="">
+        <div className="w-[50%] xs, sm:w-[100%]">
           <p className="font-extralight mt-5 mb-5 text-[16px] xs, sm:text-[15px]">
             With specific controls—such as market, seeds &#40; artists, genres,
             tracks&#41;, ranged audio features &#40;danceability, valence,
@@ -17,71 +17,127 @@ const AudioRecs = () => {
             industry-leading algorithms.
           </p>
         </div>
-        <div className="text-[18px] xs, sm:mt-0 bg-black_code h-fit p-5 rounded-md mt-10 xs, sm:overflow-x-auto">
+        <div className="text-[16px] overflow-hidden xs, sm:w-[100%] mt-10 w-[50%] xs, sm:mt-0 bg-black_code h-fit p-3 rounded-md overflow-x-auto leading-tight">
           <pre>
             <code className=" text-grey font-code_font">
-              <span className="text-white">&#60;</span>
-              script src
-              <span className="text-white">=</span>
+              <span className=" text-blue_code">const </span>
+              endpoint
+              <span className="text-white"> = </span>
               <span className="text-green_code">
-                &#34;https://sdk.scdn.co/spotify-player.js&#34;
+                &#34;https://api.spotify.com/v1/recommendations&#34;
               </span>
-              <span className="text-white">&#62;&#60;/</span>
-              script
-              <span className="text-white">&#62;</span>
-              <br></br>
-              <span className="text-white">&#60;</span>
-              script
-              <span className="text-white">&#62;</span>
-              <br></br>
-              window
-              <span className="text-white">.</span>
-              <span className="text-yellow_code">
-                onSpotifyWebPlaybackSDKReady
-              </span>
-              <span className="text-white">= () =&#62; &#123;</span>
-              <br></br>
-              <span className="pl-5 text-blue_code">const </span>
-              userAccessToken
-              <span className="text-white">=</span>
-              <span className="text-green_code">&#34;[access token]&#34;</span>
               <span className="text-white">;</span>
               <br></br>
-              <span className="pl-5 text-blue_code">const </span>
-              webPlayback
-              <span className="text-white">=</span>
-              <span className="text-blue_code">new</span>
-              <span className="text-yellow_code">Spotify.Player</span>
-              <span className="text-white">(&#123;</span>
-              <br></br>
-              <span className="pl-10">name</span>
-              <span className="text-white">: </span>
+              <span className=" text-blue_code">const </span>
+              artists
+              <span className="text-white"> = </span>
               <span className="text-green_code">
-                &#34;Spotify Web Playback SDK&#34;
+                &#39;6sFIWsNpZYqfjUpaCgueju&#39;
               </span>
+              <span className="text-white">;</span>
+              <br></br>
+              <span className=" text-blue_code">const </span>
+              danceability
+              <span className="text-white"> = </span>
+              <span className="text-yellow_code">encodeURIComponent</span>
+              <span className="text-white">&#40;</span>
+              <span className="text-green_code">&#39;0.9&#39;</span>
+              <span className="text-white">&#41;</span>
+              <span className="text-white">;</span>
+              <br></br>
+              <br></br>
+              <span className="text-yellow_code">fetch</span>
+              <span className="text-white">&#40;</span>
+              <span className="text-green_code">&#96;</span>
+              <span className="text-white">$&#123;</span>
+              endpoint
+              <span className="text-white">&#125;</span>
+              <span className="text-green_code">?seed_artists=</span>
+              <span className="text-white">$&#123;</span>
+              artists
+              <span className="text-white">&#125;</span>
+              <span className="text-green_code">&target_danceability=</span>
+              <span className="text-white">$&#123;</span>
+              danceability
+              <span className="text-white">&#125;</span>
+              <span className="text-green_code">&#96;</span>
+              <span className="text-white">, </span>
+              <span className="text-white">$&#123;</span>
+              <br></br>
+              <span className="pl-5">method</span>
+              <span className="text-white">: </span>
+              <span className="text-green_code">&#34;GET&#34;</span>
               <span className="text-white">,</span>
               <br></br>
-              <span className="text-yellow_code ml-10">getOAuthToken</span>
+              <span className="pl-5">headers</span>
               <span className="text-white">: </span>
-              callback
-              <span className="text-white"> =&#62; &#123; </span>
-              <span className="text-yellow_code">callback</span>
-              <span className="text-white">(</span>
+              <span className="text-white">&#123;</span>
+              <br></br>
+              <span className="pl-10">Authorization</span>
+              <span className="text-white">: </span>
+              <span className="text-green_code">&#96;Bearer </span>
+              <span className="text-white">$&#123;</span>
               userAccessToken
-              <span className="text-white">)&#125;</span>
+              <span className="text-white">&#125;</span>
+              <span className="text-green_code">&#96;</span>
               <br></br>
-              <span className="text-white ml-5">&#125;);</span>
+              <span className="pl-5 text-white">&#125;</span>
               <br></br>
-              <span className="ml-5">webPlayback</span>
+              <span className=" text-white">&#125;</span>
+              <span className=" text-white">&#41;</span>
+              <br></br>
               <span className="text-white">.</span>
-              <span className="text-yellow_code">connect</span>
-              <span className="text-white">();</span>
+              <span className="text-yellow_code">then</span>
+              <span className="text-white">&#40;</span>
+              response
+              <span className="text-white"> =&#62; </span>
+              response
+              <span className="text-white">.</span>
+              <span className="text-yellow_code">json</span>
+              <span className="text-white">()&#41;</span>
               <br></br>
-              <span className="text-white">&#125;;</span>
+              <span className="text-white">.</span>
+              <span className="text-yellow_code">then</span>
+              <span className="text-white">&#40;&#40;&#123;</span>
+              tracks
+              <span className="text-white">&#125;&#41; </span>
+              <span className="text-white"> =&#62; </span>
+              <span className="text-white">&#123;</span>
               <br></br>
-              <span className="text-white">&#60;/</span>
-              script
-              <span className="text-white">&#62;</span>
+              <span className="pl-5">tracks</span>
+              <span className="text-white">.</span>
+              <span className="text-yellow_code">forEach</span>
+              <span className="text-white">&#40;</span>
+              item
+              <span className="text-white"> =&#62; </span>
+              <span className="text-white">&#123;</span>
+              <br></br>
+              <span className="pl-8">console</span>
+              <span className="text-white">.</span>
+              <span className="text-yellow_code">log</span>
+              <span className="text-white">&#40;</span>
+              <span className="text-green_code">&#96;</span>
+              <span className="text-white">$&#123;</span>
+              item
+              <span className="text-white">.</span>
+              name
+              <span className="text-white">&#125;</span>
+              <span className="text-green_code"> by </span>
+              <span className="text-white">$&#123;</span>
+              item
+              <span className="text-white">.</span>
+              artists
+              <span className="text-white">&#91;</span>
+              <span className="text-[#ae81ff]">0</span>
+              <span className="text-white">&#93;.</span>
+              name
+              <span className="text-white">&#125;</span>
+              <span className="text-green_code">&#96;</span>
+              <span className="text-white">&#41;.</span>
+              <br></br>
+              <span className="pl-5 text-white">&#125;&#41;</span>
+              <br></br>
+              <span className="text-white">&#125;&#41;</span>
             </code>
           </pre>
         </div>

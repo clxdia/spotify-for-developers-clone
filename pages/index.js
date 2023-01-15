@@ -35,25 +35,35 @@ const Home = () => {
     <div>
       <div className="bg-home bg-auto bg-center xs:bg-cover sm:bg-cover h-[84vh] xs:h-auto sm:h-auto ">
         <h1 className="xs:text-[1.9rem] sm:text-[38px] xs:p-5 text-[3.7rem] xs, sm:w-[100%] w-[65%] p-10 pt-[7rem] leading-tight font-circular_bold">
-          Build experiences for millions of music lovers with
-          <span className="text-purple hover:underline hover:underline-offset-2 hover:text-black">
-            {" "}
+          Build experiences for millions of music lovers with{" "}
+          <Link
+            href="discover/#playback"
+            className="text-purple hover:underline hover:underline-offset-2 hover:text-black"
+          >
             playback
-          </span>
+          </Link>
           ,{" "}
-          <span className="text-purple hover:underline hover:underline-offset-2 hover:text-black">
+          <Link
+            href="discover/#user-taste"
+            className="text-purple hover:underline hover:underline-offset-2 hover:text-black"
+          >
             personalization
-          </span>
-          , and
-          <span className="text-purple hover:underline hover:underline-offset-2 hover:text-black">
-            {" "}
+          </Link>
+          , and{" "}
+          <Link
+            href="/discover"
+            className="text-purple hover:underline hover:underline-offset-2 hover:text-black"
+          >
             much, much more
-          </span>
+          </Link>
           .
         </h1>
-        <button className="bg-purple xs, sm:mb-20 text-white p-4 pl-12 pr-12 rounded-[50px] uppercase font-bold tracking-widest ml-10 xs:ml-4 mt-3 hover:bg-[#BF52AB] hover:ease-in-out">
-          discover features
-        </button>
+
+        <Link href="/discover">
+          <button className="bg-purple xs, sm:mb-20 text-white p-4 pl-12 pr-12 rounded-[50px] uppercase font-bold tracking-widest ml-10 xs:ml-4 mt-3 hover:bg-[#BF52AB] hover:ease-in-out">
+            discover features
+          </button>
+        </Link>
       </div>
       <ul className="flex sm:w-[80%] m-auto xs:w-[90%] justify-center xs, sm:justify-start p-5 xs, sm:pt-8 pt-[5rem] gap-20 font-semibold xs, sm:flex-wrap xs, sm:gap-0">
         <li className="">
