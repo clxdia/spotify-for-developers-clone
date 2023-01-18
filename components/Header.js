@@ -214,16 +214,44 @@ const Header = () => {
         <nav className="text-white text-[14px] font-light uppercase">
           <ul>
             <li className="hover:text-greenify hover:transition hover:ease-in-out p-7 border-[1px] border-x-menu_grey border-y-dark_grey">
-              <Link href="/discover">discover</Link>
+              <Link
+                href="/discover"
+                onClick={() => {
+                  isMenuOpen(true);
+                }}
+              >
+                discover
+              </Link>
             </li>
             <li className="hover:text-greenify hover:transition hover:ease-in-out p-7 border-[1px] border-x-menu_grey border-b-dark_grey border-t-light_black">
-              <Link href="/community">community</Link>
+              <Link
+                href="/community/news"
+                onClick={() => {
+                  isMenuOpen(true);
+                }}
+              >
+                community
+              </Link>
             </li>
             <li className="hover:text-greenify hover:transition hover:ease-in-out p-7 border-[1px] border-x-menu_grey border-y-light_black">
-              <Link href="/dashboard">dashboard</Link>
+              <Link
+                href="/dashboard"
+                onClick={() => {
+                  isMenuOpen(true);
+                }}
+              >
+                dashboard
+              </Link>
             </li>
             <li className="hover:text-greenify hover:transition hover:ease-in-out p-7 border-[1px] border-x-menu_grey border-t-dark_grey border-b-menu_grey">
-              <Link href="/use-cases">use cases</Link>
+              <Link
+                href="/use-cases"
+                onClick={() => {
+                  isMenuOpen(true);
+                }}
+              >
+                use cases
+              </Link>
             </li>
           </ul>
         </nav>
