@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-black p-[0.9rem] text-white w-[100%] relative">
+      <header className="bg-black p-[0.9rem] text-white w-[100%] z-50 relative">
         <div className="flex items-center sm:justify-between">
           <div className="flex items-center">
             <Link href="/">
@@ -30,21 +30,42 @@ const Header = () => {
           <div className="pl-10 font-[200] w-[100%] ml-10 text-[14px] sm:hidden">
             <ul className="uppercase flex justify-start gap-[4rem] font-circular_light">
               <li className="hover:text-greenify hover:transition hover:ease-in-out">
-                <Link href="/discover">discover</Link>
+                <Link
+                  href="/discover"
+                  onMouseEnter={() =>
+                    setCommunityOpen(false) || setCasesOpen(false)
+                  }
+                >
+                  discover
+                </Link>
               </li>
-              <li className=" hover:transition hover:ease-in-out hover:text-greenify ">
+              <li className=" hover:transition hover:ease-in-out hover:text-greenify z-50">
                 <Link
                   href="/community/news"
-                  onMouseEnter={() => setCommunityOpen(true)}
+                  onMouseEnter={() =>
+                    setCommunityOpen(true) || setCasesOpen(false)
+                  }
                 >
                   community
                 </Link>
               </li>
               <li className="hover:text-greenify hover:transition hover:ease-in-out">
-                <Link href="/dashboard">dashboard</Link>
+                <Link
+                  href="/dashboard"
+                  onMouseEnter={() =>
+                    setCommunityOpen(false) || setCasesOpen(false)
+                  }
+                >
+                  dashboard
+                </Link>
               </li>
               <li className="hover:text-greenify hover:transition hover:ease-in-out">
-                <Link href="/use-cases" onMouseEnter={() => setCasesOpen(true)}>
+                <Link
+                  href="/use-cases"
+                  onMouseEnter={() =>
+                    setCasesOpen(true) || setCommunityOpen(false)
+                  }
+                >
                   use cases
                 </Link>
               </li>
@@ -55,9 +76,9 @@ const Header = () => {
           </div>
         </div>
       </header>
-      {isCommunityOpen && (
+      {isCommunityOpen ? (
         <div
-          className="bg-black_code block absolute p-10 w-[100%] font-bold z-50"
+          className="bg-black_code block absolute p-10 w-[100%] font-bold z-[1] collapsed"
           onMouseLeave={() => setCommunityOpen(false)}
         >
           <ul className="flex gap-20 text-white">
@@ -81,11 +102,15 @@ const Header = () => {
             </li>
           </ul>
         </div>
-      )}
-
-      {isCasesOpen && (
+      ) : (
         <div
-          className="bg-black_code block absolute p-10 w-[100%] font-bold z-50"
+          className="absolute p-10 collapsing"
+          onMouseLeave={() => setCommunityOpen(false)}
+        ></div>
+      )}
+      {isCasesOpen ? (
+        <div
+          className="bg-black_code block absolute p-10 w-[100%] font-bold z-[1] collapsed"
           onMouseLeave={() => setCasesOpen(false)}
         >
           <ul className="flex gap-20 text-[14px] text-white">
@@ -121,7 +146,13 @@ const Header = () => {
             </li>
           </ul>
         </div>
+      ) : (
+        <div
+          className="absolute p-10 collapsing"
+          onMouseLeave={() => setCasesOpen(false)}
+        ></div>
       )}
+
       <div
         className={
           isMenuOpen
