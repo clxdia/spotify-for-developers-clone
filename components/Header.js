@@ -13,6 +13,10 @@ const Header = () => {
   const [isCommunityOpen, setCommunityOpen] = useState(false);
   const [isCasesOpen, setCasesOpen] = useState(false);
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isCommunityH, setCommunityH] = useState(false);
+  const [isDiscoveryH, setDiscoveryH] = useState(false);
+  const [isDashboardH, setDashboardH] = useState(false);
+  const [isCasesH, setCasesH] = useState(false);
 
   return (
     <>
@@ -35,8 +39,19 @@ const Header = () => {
                   onMouseEnter={() =>
                     setCommunityOpen(false) || setCasesOpen(false)
                   }
+                  onClick={() =>
+                    setDiscoveryH(true) ||
+                    setCasesH(false) ||
+                    setCommunityH(false) ||
+                    setDashboardH(false)
+                  }
                 >
                   discover
+                  {isDiscoveryH ? (
+                    <div className="p-[2px] absolute pr-5 pl-5 bg-greenify mx-auto xs:w-fit mt-[0.15rem] w-10"></div>
+                  ) : (
+                    <div className="hidden"></div>
+                  )}
                 </Link>
               </li>
               <li className=" hover:transition hover:ease-in-out hover:text-greenify z-50">
@@ -45,8 +60,20 @@ const Header = () => {
                   onMouseEnter={() =>
                     setCommunityOpen(true) || setCasesOpen(false)
                   }
+                  onClick={() =>
+                    setDiscoveryH(false) ||
+                    setCasesH(false) ||
+                    setCommunityH(true) ||
+                    setDashboardH(false)
+                  }
+                  className="relative"
                 >
                   community
+                  {isCommunityH ? (
+                    <div className="p-[2px] absolute pr-5 pl-5 bg-greenify mx-auto xs:w-fit mt-[0.15rem] w-10"></div>
+                  ) : (
+                    <div className="hidden"></div>
+                  )}
                 </Link>
               </li>
               <li className="hover:text-greenify hover:transition hover:ease-in-out">
@@ -55,8 +82,20 @@ const Header = () => {
                   onMouseEnter={() =>
                     setCommunityOpen(false) || setCasesOpen(false)
                   }
+                  onClick={() =>
+                    setDiscoveryH(false) ||
+                    setCasesH(false) ||
+                    setCommunityH(false) ||
+                    setDashboardH(true)
+                  }
+                  className="relative"
                 >
                   dashboard
+                  {isDashboardH ? (
+                    <div className="p-[2px] absolute pr-5 pl-5 bg-greenify mx-auto xs:w-fit mt-[0.15rem] w-10"></div>
+                  ) : (
+                    <div className="hidden"></div>
+                  )}
                 </Link>
               </li>
               <li className="hover:text-greenify hover:transition hover:ease-in-out">
@@ -65,8 +104,20 @@ const Header = () => {
                   onMouseEnter={() =>
                     setCasesOpen(true) || setCommunityOpen(false)
                   }
+                  onClick={() =>
+                    setDiscoveryH(false) ||
+                    setCasesH(true) ||
+                    setCommunityH(false) ||
+                    setDashboardH(false)
+                  }
+                  className="relative"
                 >
                   use cases
+                  {isCasesH ? (
+                    <div className="p-[2px] absolute pr-5 pl-5 bg-greenify mx-auto xs:w-fit mt-[0.15rem] w-10"></div>
+                  ) : (
+                    <div className="hidden"></div>
+                  )}
                 </Link>
               </li>
             </ul>
@@ -83,7 +134,7 @@ const Header = () => {
         >
           <ul className="flex gap-20 text-white">
             <li>
-              <Link href="/news">
+              <Link href="/community/news">
                 <Image src={news} className="mb-3"></Image>
                 NEWS
               </Link>
