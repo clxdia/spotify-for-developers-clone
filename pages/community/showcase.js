@@ -62,7 +62,7 @@ const showcase = () => {
           <div className="bg-[url('/showcase/showcase5.png')] showcase-long">
             <Link href="/" className="showcase-hover">
               <h2 className="font-circular_bold ">Playlist Souffle</h2>
-              <p>Playlist Souffle allows you to 'souffle' up your playlists</p>
+              <p>Playlist Souffle allows you to souffle up your playlists</p>
             </Link>
           </div>
           <div className="bg-[url('/showcase/showcase6.png')] showcase mr-[3vw]">
@@ -121,9 +121,7 @@ const showcase = () => {
           <div className="bg-[url('/showcase/showcase14.png')] showcase mr-[3vw]">
             <Link href="/" className="showcase-hover">
               <h2 className="font-circular_bold ">Klarafy</h2>
-              <p>
-                Klarafy 'translates' your favorite music into classical music
-              </p>
+              <p>Klarafy translates your favorite music into classical music</p>
             </Link>
           </div>
           <div className="bg-[url('/showcase/showcase15.jpg')] showcase-long">

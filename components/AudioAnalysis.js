@@ -18,7 +18,7 @@ const AudioAnalysis = () => {
           </p>
           <Image src={sections}></Image>
         </div>
-        <div className="text-[16px] overflow-hidden xs, sm:w-[100%] mt-10 w-[50%] xs, sm:mt-0 bg-black_code h-fit p-3 rounded-md overflow-x-auto leading-tight">
+        <div className="text-[17px] overflow-hidden xs, sm:w-[100%] mt-10 w-[50%] xs, sm:mt-0 bg-black_code h-fit p-3 rounded-md overflow-x-auto leading-tight">
           <pre className="">
             <code className=" text-grey font-code_font">
               <span className="text-yellow_code">fetch</span>

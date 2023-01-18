@@ -146,6 +146,14 @@ p {
   transition: opacity 0.3s ease;
 }
 
+.grid-overlays {
+  transition: opacity 0.3s ease, background-size 0.3s ease;
+}
+
+.grid-overlay-2 {
+  transition: background-size 0.3s ease;
+}
+
 @media only screen and (min-width: 768px) {
   .showcase-container {
     display: flex;
