@@ -12,7 +12,7 @@ const ConsoleCards = ({ title, children }) => {
             <th>Usage</th>
           </tr>
         </thead>
-        <tbody className="text-left">{children}</tbody>
+        <tbody className="text-left">{[children]}</tbody>
       </table>
     </article>
   );
