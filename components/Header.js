@@ -14,6 +14,7 @@ const Header = () => {
   const [isCasesOpen, setCasesOpen] = useState(false);
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isCommunityH, setCommunityH] = useState(false);
+  const [isConsoleH, setConsoleH] = useState(false);
   const [isDiscoveryH, setDiscoveryH] = useState(false);
   const [isDashboardH, setDashboardH] = useState(false);
   const [isCasesH, setCasesH] = useState(false);
@@ -43,11 +44,31 @@ const Header = () => {
                     setDiscoveryH(true) ||
                     setCasesH(false) ||
                     setCommunityH(false) ||
-                    setDashboardH(false)
+                    setDashboardH(false) ||
+                    setConsoleH(false)
                   }
                 >
                   discover
                   {isDiscoveryH ? (
+                    <div className="p-[2px] absolute pr-5 pl-5 bg-greenify mx-auto xs:w-fit mt-[0.15rem] w-10"></div>
+                  ) : (
+                    <div className="hidden"></div>
+                  )}
+                </Link>
+              </li>
+              <li className="hover:text-greenify hover:transition hover:ease-in-out">
+                <Link
+                  href="/console"
+                  onClick={() =>
+                    setDiscoveryH(false) ||
+                    setCasesH(false) ||
+                    setCommunityH(false) ||
+                    setDashboardH(false) ||
+                    setConsoleH(true)
+                  }
+                >
+                  console
+                  {isConsoleH ? (
                     <div className="p-[2px] absolute pr-5 pl-5 bg-greenify mx-auto xs:w-fit mt-[0.15rem] w-10"></div>
                   ) : (
                     <div className="hidden"></div>
@@ -64,7 +85,8 @@ const Header = () => {
                     setDiscoveryH(false) ||
                     setCasesH(false) ||
                     setCommunityH(true) ||
-                    setDashboardH(false)
+                    setDashboardH(false) ||
+                    setConsoleH(false)
                   }
                   className="relative"
                 >
@@ -86,7 +108,8 @@ const Header = () => {
                     setDiscoveryH(false) ||
                     setCasesH(false) ||
                     setCommunityH(false) ||
-                    setDashboardH(true)
+                    setDashboardH(true) ||
+                    setConsoleH(false)
                   }
                   className="relative"
                 >
@@ -108,7 +131,8 @@ const Header = () => {
                     setDiscoveryH(false) ||
                     setCasesH(true) ||
                     setCommunityH(false) ||
-                    setDashboardH(false)
+                    setDashboardH(false) ||
+                    setConsoleH(false)
                   }
                   className="relative"
                 >
