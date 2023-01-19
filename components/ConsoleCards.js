@@ -1,6 +1,6 @@
 import React from "react";
 
-const ConsoleCards = ({ title, children }) => {
+const ConsoleCards = ({ title, table }) => {
   return (
     <article>
       <h1>{title}</h1>
@@ -12,7 +12,7 @@ const ConsoleCards = ({ title, children }) => {
             <th>Usage</th>
           </tr>
         </thead>
-        <tbody className="text-left">{[children]}</tbody>
+        <tbody className="text-left">{table}</tbody>
       </table>
     </article>
   );

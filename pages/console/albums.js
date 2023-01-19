@@ -7,7 +7,7 @@ const albums = () => {
     <Layout2>
       <ConsoleCards
         title={"hi"}
-        children={
+        table={
           <tr className="text-left">
             <td>Delete</td>
             <td>v1/playlists/playlist_id/tracks</td>
