@@ -21,7 +21,7 @@ const playlists = () => {
               <td className="text-greenify hover:text-light_green cursor-pointer">
                 /v1/me/playlists
               </td>
-              <td>Get Current User's Playlists</td>
+              <td>Get Current User&#39;s Playlists</td>
             </tr>
             <tr className="text-left font-[300]">
               <td className="uppercase">get</td>
@@ -49,7 +49,7 @@ const playlists = () => {
               <td className="text-greenify hover:text-light_green cursor-pointer">
                 /v1/users/&#123;user_id&#125;/playlists
               </td>
-              <td> Get User's Playlists</td>
+              <td> Get User&#39;s Playlists</td>
             </tr>
             <tr className="text-left font-[300]">
               <td className="uppercase">post</td>

@@ -14,7 +14,7 @@ const player = () => {
               <td className="text-greenify hover:text-light_green cursor-pointer">
                 /v1/me/player/queue
               </td>
-              <td> Get the User's Queue</td>
+              <td> Get the User&#39;s Queue</td>
             </tr>
             <tr className="text-left font-[300]">
               <td className="uppercase">get</td>

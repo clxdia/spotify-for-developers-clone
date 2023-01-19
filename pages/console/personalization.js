@@ -14,7 +14,7 @@ const personalization = () => {
               <td className="text-greenify hover:text-light_green cursor-pointer">
                 /v1/me/top/&#123;type&#125;
               </td>
-              <td> Get User's Top Items</td>
+              <td> Get User&#39;s Top Items</td>
             </tr>
           </>
         }

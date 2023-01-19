@@ -14,21 +14,21 @@ const artists = () => {
               <td className="text-greenify hover:text-light_green cursor-pointer">
                 /v1/artists/&#123;id&#125;/albums
               </td>
-              <td> Get Artist's Albums</td>
+              <td> Get Artist&#39;s Albums</td>
             </tr>
             <tr className="text-left font-[300]">
               <td className="uppercase">get</td>
               <td className="text-greenify hover:text-light_green cursor-pointer">
                 /v1/artists/&#123;id&#125;/related-artists
               </td>
-              <td> Get Artist's Related Artists</td>
+              <td> Get Artist&#39;s Related Artists</td>
             </tr>
             <tr className="text-left font-[300]">
               <td className="uppercase">get</td>
               <td className="text-greenify hover:text-light_green cursor-pointer">
                 /v1/artists/&#123;id&#125;/top-tracks
               </td>
-              <td> Get Artist's Top Tracks</td>
+              <td> Get Artist&#39;s Top Tracks</td>
             </tr>
             <tr className="text-left font-[300]">
               <td className="uppercase">get</td>

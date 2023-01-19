@@ -35,7 +35,7 @@ const browse = () => {
               <td className="text-greenify hover:text-light_green cursor-pointer">
                 /v1/browse/categories/&#123;category_id&#125;/playlists
               </td>
-              <td> Get Category's Playlists</td>
+              <td> Get Category&#39;s Playlists</td>
             </tr>
             <tr className="text-left font-[300]">
               <td className="uppercase">get</td>

@@ -14,14 +14,14 @@ const users_profile = () => {
               <td className="text-greenify hover:text-light_green cursor-pointer">
                 /v1/me
               </td>
-              <td>Get Current User's Profile</td>
+              <td>Get Current User&#39;s Profile</td>
             </tr>
             <tr className="text-left font-[300]">
               <td className="uppercase">get</td>
               <td className="text-greenify hover:text-light_green cursor-pointer">
                 /v1/users/&#123;users_id&#125;
               </td>
-              <td> Get User's Profiles</td>
+              <td> Get User&#39;s Profiles</td>
             </tr>
           </>
         }

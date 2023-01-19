@@ -14,21 +14,21 @@ const tracks = () => {
               <td className="text-greenify hover:text-light_green cursor-pointer">
                 /v1/audio-analysis/&#123;id&#125;
               </td>
-              <td>Get Track's Audio Analysis</td>
+              <td>Get Track&#39;s Audio Analysis</td>
             </tr>
             <tr className="text-left font-[300]">
               <td className="uppercase">get</td>
               <td className="text-greenify hover:text-light_green cursor-pointer">
                 /v1/audio-features
               </td>
-              <td>Get Tracks' Audio Features</td>
+              <td>Get Tracks&#39; Audio Features</td>
             </tr>
             <tr className="text-left font-[300]">
               <td className="uppercase">get</td>
               <td className="text-greenify hover:text-light_green cursor-pointer">
                 /v1/audio-features/&#123;id&#125;
               </td>
-              <td>Get Track's Audio Features</td>
+              <td>Get Track&#39;s Audio Features</td>
             </tr>
             <tr className="text-left font-[300]">
               <td className="uppercase">get</td>
