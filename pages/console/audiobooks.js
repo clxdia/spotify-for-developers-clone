@@ -2,33 +2,33 @@ import React from "react";
 import ConsoleCards from "../../components/ConsoleCards";
 import Layout2 from "./layout";
 
-const albums = () => {
+const audiobooks = () => {
   return (
     <Layout2>
       <ConsoleCards
-        title={"Albums"}
+        title={"Audiobooks"}
         table={
           <>
             <tr className="text-left font-[300]">
               <td className="uppercase">get</td>
               <td className="text-greenify hover:text-light_green cursor-pointer">
-                /v1/albums/&#123;id&#125;/tracks
+                /v1/audiobooks/&#123;id&#125;/chapters
               </td>
-              <td> Get Album Tracks</td>
+              <td> Get Audiobook Chapters</td>
             </tr>
             <tr className="text-left font-[300]">
               <td className="uppercase">get</td>
               <td className="text-greenify hover:text-light_green cursor-pointer">
-                /v1/albums/&#123;id&#125;
+                /v1/audiobooks/&#123;id&#125;
               </td>
-              <td> Get Album</td>
+              <td> Get an Audiobook</td>
             </tr>
             <tr className="text-left font-[300]">
               <td className="uppercase">get</td>
               <td className="text-greenify hover:text-light_green cursor-pointer">
-                /v1/albums
+                /v1/audiobooks
               </td>
-              <td> Get Several Albums</td>
+              <td> Get Several Audiobooks</td>
             </tr>
           </>
         }
@@ -36,4 +36,4 @@ const albums = () => {
     </Layout2>
   );
 };
-export default albums;
+export default audiobooks;
