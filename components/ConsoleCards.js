@@ -2,7 +2,7 @@ import React from "react";
 
 const ConsoleCards = ({ title, table }) => {
   return (
-    <article className="p-[3rem]">
+    <article className="p-[3rem] xs, sm:p-[1.5rem] xs, sm:pt-[3rem] xs, sm:pb-[6rem]">
       <h1 className="font-circular_bold">{title}</h1>
       <table className="mt-5">
         <thead>

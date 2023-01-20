@@ -163,6 +163,11 @@ p {
   height: auto;
 }
 
+.collapsing-2 {
+  transform: translateY(-300px);
+  transition: all 0.5s ease;
+}
+
 th {
   font-family: sans-serif;
   font-weight: 100;

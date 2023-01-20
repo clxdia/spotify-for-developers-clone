@@ -228,58 +228,66 @@ const Header = () => {
         ></div>
       )}
 
-      <div
-        className={
-          isMenuOpen
-            ? "md:hidden bg-menu_grey block w-full h-[316px] align-items ease-out duration-200 overflow-y-auto"
-            : "md:hidden bg-menu_grey hidden w-full ease-out duration-200 overflow-y-auto"
-        }
-      >
-        <nav className="text-white text-[14px] font-light uppercase">
-          <ul>
-            <li className="hover:text-greenify hover:transition hover:ease-in-out p-7 border-[1px] border-x-menu_grey border-y-dark_grey">
-              <Link
-                href="/discover"
-                onClick={() => {
-                  isMenuOpen(true);
-                }}
-              >
-                discover
-              </Link>
-            </li>
-            <li className="hover:text-greenify hover:transition hover:ease-in-out p-7 border-[1px] border-x-menu_grey border-b-dark_grey border-t-light_black">
-              <Link
-                href="/community/news"
-                onClick={() => {
-                  isMenuOpen(true);
-                }}
-              >
-                community
-              </Link>
-            </li>
-            <li className="hover:text-greenify hover:transition hover:ease-in-out p-7 border-[1px] border-x-menu_grey border-y-light_black">
-              <Link
-                href="/dashboard"
-                onClick={() => {
-                  isMenuOpen(true);
-                }}
-              >
-                dashboard
-              </Link>
-            </li>
-            <li className="hover:text-greenify hover:transition hover:ease-in-out p-7 border-[1px] border-x-menu_grey border-t-dark_grey border-b-menu_grey">
-              <Link
-                href="/use-cases"
-                onClick={() => {
-                  isMenuOpen(true);
-                }}
-              >
-                use cases
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      {isMenuOpen ? (
+        <div className="md:hidden bg-black block z-[1] align-items relative collapsed w-[100%] h-[100%]">
+          <nav className="text-white text-[14px] font-light bg-menu_grey uppercase relative h-auto w-full z-[100]">
+            <ul>
+              <li className="hover:text-greenify hover:transition hover:ease-in-out p-7 border-[1px] border-x-menu_grey border-y-dark_grey">
+                <Link
+                  href="/discover"
+                  onClick={() => {
+                    isMenuOpen(true);
+                  }}
+                >
+                  discover
+                </Link>
+              </li>
+              <li className="hover:text-greenify hover:transition hover:ease-in-out p-7 border-[1px] border-x-menu_grey border-b-dark_grey border-t-light_black">
+                <Link
+                  href="/console"
+                  onClick={() => {
+                    isMenuOpen(true);
+                  }}
+                >
+                  console
+                </Link>
+              </li>
+              <li className="hover:text-greenify hover:transition hover:ease-in-out p-7 border-[1px] border-x-menu_grey border-b-dark_grey border-t-light_black">
+                <Link
+                  href="/community/news"
+                  onClick={() => {
+                    isMenuOpen(true);
+                  }}
+                >
+                  community
+                </Link>
+              </li>
+              <li className="hover:text-greenify hover:transition hover:ease-in-out p-7 border-[1px] border-x-menu_grey border-y-light_black">
+                <Link
+                  href="/dashboard"
+                  onClick={() => {
+                    isMenuOpen(true);
+                  }}
+                >
+                  dashboard
+                </Link>
+              </li>
+              <li className="hover:text-greenify hover:transition hover:ease-in-out p-7 border-[1px] border-x-menu_grey border-t-dark_grey border-b-menu_grey">
+                <Link
+                  href="/use-cases"
+                  onClick={() => {
+                    isMenuOpen(true);
+                  }}
+                >
+                  use cases
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      ) : (
+        <div className="md:hidden bg-menu_grey w-full collapsing-2 relative"></div>
+      )}
     </>
   );
 };
